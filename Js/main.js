@@ -29,6 +29,31 @@ $(document).ready(function () {
 			prevEl: ".swiper-button-prev",
 		},
 	});
+
+    new Swiper(".markupDonateSlider", {
+		loop: true,
+		speed: 5000,
+		autoplay: true,
+		delay: 5000,
+		disableOnInteraction: false,
+		slidesPerGroup: 1,
+		pagination: {
+			el: ".markupDonateSlider .swiper-pagination",
+			clickable: true,
+		},
+		breakpoints: {
+			499: {
+				slidesPerView: 1,
+			},
+			999: {
+				slidesPerView: 2,
+			},
+			1200: {
+				slidesPerView: 3,
+			}
+		}
+	});
+
 });
 
 $(document).ready(function() {
