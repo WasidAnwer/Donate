@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="Css/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="markup-top">
+            <div class="container parent">
+                <div class="connect-us">
+                    <a href="tel: +91-9600xxxxxx">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+91-9600xxxxxx</span>
+                    </a>
+                    <a class="header-email" href="mailto:xyz@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>xyz@gmail..com</span>
+                    </a>
+                </div>
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                
+                </div>
+               <!-- Donate Button -->
+<button class="Dnt" id="openModal">
+    Donate
+</button>
+
+<!-- Modal Structure (same as above) -->
+<div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="donationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="donationModalLabel">Secure Donation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Frequency Selection -->
+                <div class="donation-frequency">
+                    <button class="active">Give Once</button> |
+                    <button>Monthly</button>
+                </div>
+
+                <!-- Donation Options -->
+                <div class="donation-options my-3">
+                    <button>₹100K</button>
+                    <button>₹50K</button>
+                    <button>₹25K</button>
+                    <button>₹10K</button>
+                    <button class="active">₹5,000</button>
+                    <button>₹2,500</button>
+                </div>
+
+                <!-- Custom Amount Input -->
+                <input type="text" value="₹5,000">
+
+                <!-- Currency and Designation -->
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="currencyDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        INR
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="currencyDropdown">
+                        <li><a class="dropdown-item" href="#">USD</a></li>
+                        <li><a class="dropdown-item" href="#">GBP</a></li>
+                    </ul>
+                </div>
+
+                <p class="mt-2">Designate to <a href="#">Where Needed Most</a></p>
+
+                <!-- Donate Button -->
+                <button class="donate-btn">Donate</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// JavaScript to open the modal
+document.getElementById("openModal").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent default link behavior
+    var modal = new bootstrap.Modal(document.getElementById("donationModal"));
+    modal.show();
+});
+</script>
+
+               
+            </div>
+        </div>
+        <div class="markup-navbar">
+            <div class="container content-nav">
+                <div class="logo">
+                    <img src="image/logo (1).jpg" alt="logo" />
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">Giving</a>
+                            <ul class="dropdown">
+                                <li><a href="#">Zakat</a></li>
+                                <li><a href="#">Sadaqah</a></li>
+                                <li><a href="#">General Donation</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Appeals</a>
+                            <ul class="dropdown">
+                                <li><a href="#">Emergency Relief</a></li>
+                                <li><a href="#">Food Aid</a></li>
+                                <li><a href="#">Medical Assistance</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                            <ul class="dropdown">
+                                <li><a href="#">Our Mission</a></li>
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </li>
+                       
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="markup-bot">
+            <div class="container parent-btn">
+                <!-- <div class="social-list">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                </div> -->
+            </div>
+        </div>
+    </header>
+    <section class="markup-banner">
+        <div class="swiper markupBannerSlider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="image/help.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/help.jpg" alt="" />
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="section-text">
+            <div class="container">
+                <div class="content">
+                    <h4 id="heading-small">Be the Change</h4>
+                    <h2 id="heading-large">Build Wells</h2>
+                    <p id="description">
+                        Provide the gift of clean and accessible water by helping us build <br> wells in communities affected by water scarcity. Your support brings life.
+                    </p>
+                </div>
+                <div class="section-button">
+                    <a href="#" class="sigma_btn">More Now</a>
+                    <a href="#" class="sigma_btn">More Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="markup-about sec-pad">
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<div class="about-parent">
+						<div class="circle">
+							<div class="inner-circle">
+								<img src="image/masajid.jpg" alt="img">
+							</div>
+							<ul class="circle-container-out">
+								<li><img src="image/country.png" alt=""></li>
+								<li><img src="image/country.png" alt=""></li>
+								<li><img src="image/country.png" alt=""></li>
+								<li><img src="image/country.png" alt=""></li>
+								<li><img src="image/country.png" alt=""></li>
+								<li><img src="image/country.png" alt=""></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="about-content">
+						<span>01 --Our Work</span>
+						<h1>We Have More Than 25 Years Of <span>Experience</span></h1>
+						<a href="#">Our Mission</a>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem quas id soluta
+							perferendis
+							labore, laboriosam ipsam fugiat assumenda consequuntur, quod hic. Quia, quibusdam fuga sit
+							veniam debitis
+							suscipit ipsam! Dolorum.
+						</p>
+						<ul>
+							<li><i class="fa-regular fa-circle-check"></i> Natural Materials</li>
+							<li><i class="fa-regular fa-circle-check"></i> Professional Tailor</li>
+							<li><i class="fa-regular fa-circle-check"></i> Personal Tailor </li>
+							<li><i class="fa-regular fa-circle-check"></i> Unique Design</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+   
+<section class="Our-works sec-pad">
+    <div class="container">
+        <h2 class="section-heading text-center">Our Impactful Projects</h2>
+        <p class="section-subtext text-center">Together, we make a difference in lives through compassion and community support.</p>
+       <div class="row img-sec">
+           <div class="col-md-3">
+                <div class="our-img">
+                    <img src="image/img1.jpg" alt="">
+                    <div class="img-caption">Food Distribution</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="our-img">
+                    <img src="image/img1.jpg" alt="">
+                    <div class="img-caption">Education Support</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="our-img">
+                    <img src="image/img1.jpg" alt="">
+                    <div class="img-caption">Food Distribution</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="our-img">
+                    <img src="image/img1.jpg" alt="">
+                    <div class="img-caption">Food Distribution</div>
+                </div>
+            </div>
+       </div>
+       <div class="row img-sec">
+        <div class="col-md-3">
+            <div class="our-img">
+                <img src="image/img1.jpg" alt="">
+                <div class="img-caption">Food Distribution</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="our-img">
+                <img src="image/img1.jpg" alt="">
+                <div class="img-caption">Food Distribution</div>
+            </div>
+        </div>
+            <div class="col-md-3">
+                <div class="our-img">
+                    <img src="image/img1.jpg" alt="">
+                    <div class="img-caption">Food Distribution</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="our-img">
+                    <img src="image/img1.jpg" alt="">
+                    <div class="img-caption">Food Distribution</div>
+                </div>
+            </div>
+       </div>
+    </div>
+</section>
+<!-- <section class="our-works sec-pad">
+    <div class="container">
+        <h2 class="section-heading text-center">Our Impactful Projects</h2>
+        <p class="section-subtext text-center">Together, we make a difference in lives through compassion and community support.</p>
+        <div class="row img-sec">
+            <div class="col-md-3">
+                <div class="our-img">
+                    <img src="image/img1.jpg" alt="Food distribution to needy families" class="img-fluid">
+                    <div class="img-caption">Food Distribution</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="our-img">
+                    <img src="image/img1.jpg" alt="Education support for children" class="img-fluid">
+                    <div class="img-caption">Education Support</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="our-img">
+                    <img src="image/img1.jpg" alt="Water well construction" class="img-fluid">
+                    <div class="img-caption">Water Wells</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="our-img">
+                    <img src="image/img1.jpg" alt="Shelter for those in need" class="img-fluid">
+                    <div class="img-caption">Shelter Support</div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row img-sec">
+            <div class="col-md-3">
+                <div class="our-img">
+                    <img src="image/img1.jpg" alt="Food distribution to needy families" class="img-fluid">
+                    <div class="img-caption">Food Distribution</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="our-img">
+                    <img src="image/img2.jpeg" alt="Education support for children" class="img-fluid">
+                    <div class="img-caption">Education Support</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="our-img">
+                    <img src="image/philippines.jpg" alt="Water well construction" class="img-fluid">
+                    <div class="img-caption">Water Wells</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="our-img">
+                    <img src="image/img2.jpeg" alt="Shelter for those in need" class="img-fluid">
+                    <div class="img-caption">Shelter Support</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+    <section class="Fqu sec-pad">
+        <div class="container">
+            <div class="icon-fqu">
+                <i class="fa-solid fa-circle-question"></i>
+                <p>faq</p>
+                <h2 class="head">
+                    Questions Or Concerns
+                    on you Mind?
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="faq-as">
+                        <div class="faq-header" onclick="toggleFaq(this)">
+                            What is the purpose of this foundation?
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="faq-body">
+                            <p>Our foundation is dedicated to providing charitable aid in accordance with Islamic values. We focus on supporting communities in need through zakat, sadaqah, and other charity efforts. Our projects include food relief, education, healthcare, and emergency assistance.</p>
+                        </div>
+                    </div> 
+                    <div class="faq-as">
+                        <div class="faq-header" onclick="toggleFaq(this)">
+                            Is the foundation registered as a non-profit?
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="faq-body">
+                            <p>Yes, we are a registered non-profit organization, which means we operate solely for charitable purposes and comply with local and international non-profit regulations.</p>
+                        </div>
+                    </div> 
+                    <div class="faq-as">
+                        <div class="faq-header" onclick="toggleFaq(this)">
+                            Are donations tax-deductible?
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="faq-body">
+                            <p>In many countries, donations to our foundation are tax-deductible. Please check with your local tax authority or consult a tax advisor to confirm eligibility in your region.</p>
+                        </div>
+                    </div>
+                    <div class="faq-as">
+                        <div class="faq-header" onclick="toggleFaq(this)">
+                            How does the foundation distribute zakat?
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="faq-body">
+                            <p>Zakat is distributed strictly according to Islamic guidelines. We ensure that zakat funds are allocated to eligible recipients, including the poor, orphans, and individuals facing financial hardship. We maintain transparent records to verify zakat compliance.</p>
+                        </div>
+                    </div>
+                    <div class="faq-as">
+                        <div class="faq-header" onclick="toggleFaq(this)">
+                            What types of donations do you accept?
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="faq-body">
+                            <p>We accept various forms of donations, including zakat, sadaqah, and general charity contributions. You can donate via credit card, debit card, bank transfer, and, in some cases, cryptocurrency.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="faq-as">
+                        <div class="faq-header" onclick="toggleFaq(this)">
+                            Is my donation secure?
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="faq-body">
+                            <p>Absolutely. We use secure online payment systems to protect your financial information. Our website and payment processors follow industry-standard security protocols.</p>
+                        </div>
+                    </div>
+                    <div class="faq-as">
+                        <div class="faq-header" onclick="toggleFaq(this)">
+                            Will I receive a donation receipt?
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="faq-body">
+                            <p>Yes, you will receive an electronic receipt immediately after making an online donation. For offline donations, please contact us, and we’ll provide a receipt.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-as">
+                        <div class="faq-header" onclick="toggleFaq(this)">
+                            Can I see how my donation is used?
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="faq-body">
+                            <p>We provide regular updates through our website and newsletters to show the impact of your donations. Donors also receive periodic reports with photos, stories, and data on project outcomes.</p>
+                        </div>
+                    </div>
+                    <div class="faq-as">
+                        <div class="faq-header" onclick="toggleFaq(this)">
+                            How do you ensure transparency with donations?
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="faq-body">
+                            <p>We maintain complete financial transparency by publishing annual reports and impact summaries. These reports detail where donations are spent and the specific projects funded.</p>
+                        </div>
+                    </div>
+                    <div class="faq-as">
+                        <div class="faq-header" onclick="toggleFaq(this)">
+                            How do I contact the foundation for further questions?
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="faq-body">
+                            <p>You can reach us through our contact page, which provides our email, phone number, and social media links. We’re here to answer any questions you may have.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-section">
+                        <h3>About Ethar</h3>
+                        <p>
+                            Ethar Relief is a UK based humanitarian aid organisation operating in East Africa and the surrounding regions. Established in 2006, we exist to ease the suffering of refugees. Our goal is to help those who need us, regardless of ethnicity, gender or religious beliefs.
+                        </p>
+                        <button class="media-btn">Media</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-section">
+                        <h3>Contact Us</h3>
+                        <p><strong>Head Office</strong><br>
+                           467 Coventry Road, Birmingham, B10 0TJ, United Kingdom</p>
+                        <p>+44 (0)121 309 0230</p>
+                        <p><strong>WhatsApp</strong><br>
+                           +44 (0) 7840 404 545</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-section">
+                        <button class="donate-btn">Other ways to Donate</button>
+                        <div class="regulator">
+                            <img src="image/FR Fundraising Badge WO HR -3-.png" alt="Fundraising Regulator">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-youtube fa-bounce"></i>YouTube</a>
+                        <a href="#"><i class="fa-brands fa-facebook fa-bounce"></i>Facebook</a>
+                        <a href="#"><i class="fa-brands fa-instagram fa-bounce"></i>Instagram</a>
+                        <a href="#"><i class="fa-brands fa-linkedin fa-bounce"></i>Linkedin</a>
+                        <a href="#"><i class="fa-brands fa-twitter fa-bounce"></i>Twitter</a>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Ethar Relief - Charity Registration 1169308</p>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </footer>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="Js/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
