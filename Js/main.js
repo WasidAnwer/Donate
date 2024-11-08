@@ -104,6 +104,19 @@ $(document).ready(function() {
     });
 });
 
-
+$(document).ready(function () {
+	$(".dropdown").hide();
+	$(".menu > ul > li > a").click(function (e) {
+	  e.preventDefault(); 
+	  $(".dropdown").not($(this).next(".dropdown")).slideUp();
+	  $(this).next(".dropdown").slideToggle();
+	});
+	$(document).click(function (e) {
+	  if (!$(e.target).closest(".menu > ul > li").length) {
+		$(".dropdown").slideUp();
+	  }
+	});
+  });
+  
 
 
